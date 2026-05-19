@@ -1,23 +1,168 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Delete Account - ChatBill</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #f5f7fb;
+            color: #1f2937;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 720px;
+            background: white;
+            border-radius: 24px;
+            padding: 48px;
+            box-shadow:
+                0 10px 25px rgba(0,0,0,0.06),
+                0 4px 10px rgba(0,0,0,0.04);
+        }
+
+        .logo {
+            width: 64px;
+            height: 64px;
+            border-radius: 18px;
+            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 24px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 16px;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+
+        .subtitle {
+            color: #6b7280;
+            font-size: 17px;
+            line-height: 1.7;
+            margin-bottom: 32px;
+        }
+
+        .card {
+            background: #f9fafb;
+            border: 1px solid #e5e7eb;
+            border-radius: 18px;
+            padding: 24px;
+            margin-bottom: 24px;
+        }
+
+        .card h2 {
+            font-size: 20px;
+            margin-bottom: 16px;
+        }
+
+        .email {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 12px 18px;
+            background: white;
+            border-radius: 12px;
+            border: 1px solid #d1d5db;
+            font-weight: 600;
+            color: #4f46e5;
+            text-decoration: none;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin-top: 12px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            color: #374151;
+        }
+
+        .footer {
+            margin-top: 32px;
+            font-size: 14px;
+            color: #9ca3af;
+            text-align: center;
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                padding: 32px 24px;
+            }
+
+            h1 {
+                font-size: 30px;
+            }
+        }
+    </style>
 </head>
+
 <body>
+
+<div class="container">
+
+    <div class="logo">
+        C
+    </div>
+
     <h1>Delete Account</h1>
 
-    <p>To request account deletion, please contact:</p>
+    <p class="subtitle">
+        ChatBill respects your privacy and provides users with the ability
+        to request deletion of their account and related data.
+    </p>
 
-    <p>1571461819@qq.com</p>
+    <div class="card">
+        <h2>Request Account Deletion</h2>
 
-    <p>Please include your Google account email.</p>
+        <p>
+            To request account deletion, please contact us via email:
+        </p>
 
-    <p>We will delete:</p>
+        <a class="email" href="mailto:jakiemanus@gmail.com">
+            jakiemanus@gmail.com
+        </a>
 
-    <ul>
-        <li>Your account information</li>
-        <li>Your expense records</li>
-        <li>Related cloud data</li>
-    </ul>
+        <p style="margin-top:16px; color:#6b7280;">
+            Please include your Google account email in the request.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Data That Will Be Deleted</h2>
+
+        <ul>
+            <li>Your account information</li>
+            <li>Your expense records</li>
+            <li>AI conversation history</li>
+            <li>Related cloud data</li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        © 2026 ChatBill. All rights reserved.
+    </div>
+
+</div>
+
 </body>
 </html>
